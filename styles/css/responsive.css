@@ -1,0 +1,156 @@
+/* Small devices (phones) */
+@media (max-width: 576px) {
+  header .logo,
+  footer .logo {
+    height: 3rem;
+  }
+}
+/* Medium devices (tablets) */
+@media (min-width: 768px) {
+  footer .first-section {
+    padding-right: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+    border-right: 1px solid #e3e3e3 !important;
+  }
+  footer .second-section {
+    padding-left: 1.5rem !important;
+  }
+  .image-as-bg {
+    height: 100% !important;
+  }
+  section {
+    padding: 4rem 0rem !important;
+  }
+}
+/* Large devices (desktops) */
+@media (min-width: 992px) {
+  footer .first-section {
+    padding-bottom: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+    border-right: 1px solid #e3e3e3 !important;
+    border-bottom: none !important;
+  }
+  footer .second-section {
+    padding-bottom: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+    border-right: 1px solid #e3e3e3 !important;
+    border-bottom: none !important;
+  }
+  .chess-theme-cards.variant-1 {
+    min-height: 20.75rem;
+  }
+  .chess-theme-cards.variant-1 div {
+    background-position: bottom right;
+  }
+  .text-center .section-desc {
+    margin: 0 10rem;
+  }
+  .privacy-container {
+    padding: 4.5rem 10.75rem;
+  }
+}
+/* Extra large devices (large desktops) */
+@media (max-width: 1200px) {
+  .marquee p {
+    line-height: 120%;
+    font-size: calc(100px + 5vw) !important;
+  }
+}
+@media (max-width: 992px) {
+  .light-md {
+    background-color: #21409c !important;
+  }
+  .dark-md {
+    background-color: #10204e !important;
+  }
+  .owl-theme.align-dots-end .owl-dots {
+    text-align: center !important;
+  }
+  .testimonial-card {
+    background-position: right !important;
+  }
+  .transparent-bg-responsive {
+    background-color: transparent !important;
+  }
+  .image-left .image,
+  .image-right .image {
+    position: relative !important;
+  }
+}
+/* Responsive Design for Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .btn-primary {
+    font-size: 0.9rem !important; /* Slightly smaller font size for tablets */
+  }
+  .call-to-action {
+    min-height: 260px !important;
+  }
+}
+/* Responsive Design for Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .btn-primary {
+    font-size: 0.8rem !important; /* Smaller font size for mobile */
+  }
+  .background-image,
+  .background-image.hero-section {
+    min-height: unset !important;
+  }
+}
+/* Responsive Design for Mobile (max-width: 480px) */
+@media (min-width: 1200px) {
+  .display-1 {
+    font-size: 72px !important;
+  }
+  .display-2 {
+    font-size: 56px !important;
+  }
+  .display-3 {
+    font-size: 44px !important;
+  }
+  .display-4 {
+    font-size: 40px !important;
+  }
+  .display-5 {
+    font-size: 32px !important;
+  }
+}
+@media (min-width: 992px) {
+  .services-card img {
+    max-height: unset !important;
+    object-fit: fill !important;
+  }
+  .services-card .card-img-overlay {
+    display: flex;
+    align-items: end;
+    position: absolute !important;
+  }
+  .services-card .card-img-overlay .details {
+    background-color: rgba(0, 0, 0, 0.5019607843);
+  }
+  .services-card.service-style-2 .card-img-overlay {
+    position: relative !important;
+  }
+  #sticky {
+    height: 100%;
+    position: sticky !important;
+    top: 70px !important;
+  }
+  .two-column-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 20px;
+    list-style: none;
+    padding: 1rem;
+  }
+}
+@media (max-width: 1200px) {
+  .contact-cards {
+    flex-direction: column !important;
+  }
+  .contact-cards .card-img-left {
+    width: 100% !important;
+    border-top-right-radius: 12px !important;
+    border-bottom-left-radius: 0 !important;
+  }
+}/*# sourceMappingURL=responsive.css.map */

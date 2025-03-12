@@ -1,0 +1,102 @@
+.contact-cards {
+  box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  border: 0;
+
+  a{ color: #000; text-decoration: none;
+
+&:hover{
+    color: #f47c03;
+}}
+  h5{
+    font-weight: 500;
+  }
+
+  .card-img-left{
+    border-top-left-radius:12px;
+    border-bottom-left-radius:12px;
+  }
+}
+
+.contact-form-card {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.45);
+  border-radius: 12px;
+  backdrop-filter: blur(22px);
+  max-width: 40.25rem;
+  border: 0;
+
+  a {
+    &:hover {
+      color: #f47c03;
+      text-decoration: underline;
+    }
+  }
+
+  .form-control {
+    background-color: transparent !important;
+    color: #fff;
+
+    &::placeholder {
+      color: #fff;
+    }
+  }
+
+  button {
+    margin-top: 1.875rem;
+  }
+}
+
+.map-wrapper {
+  filter: drop-shadow(0px 0px 9px rgba(0, 0, 0, 0.15));
+  border-radius: 0.75rem;
+  max-width: 70.625rem;
+}
+
+.tabs-wrapper {
+  &:hover {
+  }
+
+  &::-webkit-scrollbar {
+    height: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    transition: background-color 0.2s ease;
+    height: 5px;
+    border-radius: 1rem;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  &.nav-tabs {
+    overflow-x: auto;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+    border-color: transparent;
+
+    .nav-item {
+      flex-shrink: 0;
+    }
+
+    .nav-link {
+      color: #000 !important;
+      border: none !important;
+      font-weight: 400;
+      font-family: "Poppins", Courier, monospace;
+      border-radius: 60px;
+
+      &.active {
+        background: #f5f5f5;
+        
+      }
+    }
+  }
+}
+
+.card-tabs {
+  box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.15) !important;
+  border-radius: 6.375rem !important;
+  max-width: max-content;
+}

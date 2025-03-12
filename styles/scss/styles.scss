@@ -1,0 +1,628 @@
+html {
+  overflow-x: hidden;
+}
+
+section {
+  padding: 3rem 0rem;
+}
+
+.text-blue{
+  color: #21409c !important;
+}
+
+// Typography
+h6 {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+h5,
+.h5 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.display-5 {
+  font-weight: 500 !important;
+}
+
+//Buttons
+.btn {
+  display: inline-flex;
+  gap: 10px;
+
+  img {
+    margin: 0;
+  }
+
+  &.btn-primary {
+    padding: 1.25em 2em;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 0;
+    color: #ffffff;
+    overflow: hidden;
+    position: relative !important;
+    transition: background-color 0.3s ease;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background-color: #f47c03;
+      transition: left 0.4s ease;
+      z-index: 1;
+    }
+
+    &:hover {
+      color: #fff !important;
+      img {
+        transform: rotate(45deg);
+      }
+      &::before {
+        left: 0;
+      }
+    }
+  }
+
+  img,
+  span {
+    position: relative;
+    z-index: 2;
+  }
+  img {
+    transition: transform 0.3s ease;
+  }
+}
+// Floating Action Button
+.btn-fab {
+  position: fixed;
+  z-index: 1;
+  bottom: 4.5rem;
+  right: 1rem;
+}
+
+//Forms
+.form-select,
+.form-control {
+  min-height: 3.0625rem;
+  font-size: 0.875rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.form-check-input {
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
+// Header & Footer
+header .logo,
+footer .logo {
+  height: 4rem;
+}
+// Footer
+footer {
+  padding: 2rem 1rem 1rem 1rem;
+  a {
+    color: #000;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    &:hover {
+      color: #f47c03;
+      text-decoration: none;
+     
+    }
+  }
+
+  .logo {
+    height: 4rem;
+  }
+
+  .first-section {
+    padding-bottom: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+    border-bottom: 1px solid #e3e3e3 !important;
+  }
+
+  .second-section {
+    padding-bottom: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+    border-bottom: 1px solid #e3e3e3 !important;
+  }
+  .social-links img {
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+  .quick-links {
+    .list {
+      &:first-child {
+        padding-right: 1rem;
+      }
+      li {
+        position: relative;
+        padding-left: 30px;
+
+        a{
+        }
+
+        &:hover a{
+          padding-left: .625rem;
+        }
+
+        &::before {
+          content: "";
+          height: 24px;
+          width: 24px;
+          background: url(../../assets/icons/bullet_star.svg);
+          background-repeat: no-repeat;
+          margin-right: 8px;
+          display: inline-block;
+          position: absolute;
+          left: 0px;
+          top: 0px;
+        }
+      }
+    }
+  }
+}
+// Header
+header {
+  .top-ribbon {
+    padding: 0.75rem 1rem;
+    background-color: #21409c;
+
+    a {
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .social-links {
+      img {
+        filter: brightness(10);
+        height: 2rem;
+        width: 2rem;
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+
+  nav {
+    padding: 1rem !important;
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          color: #000 !important;
+
+          &.active,
+          &:hover {
+            color: #f47c03 !important;
+          }
+          &.active {
+            font-weight: 600 !important;
+          }
+        }
+      }
+    }
+  }
+  .dropdown-toggle::after {
+    display: none;
+  }
+  .navbar-nav .dropdown-menu {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 15px 0px;
+    padding: 0.5rem;
+
+    .dropdown-item {
+      padding: 0.5rem;
+      border-radius: 0.375rem !important;
+      &:hover,
+      &:active {
+        color: #f47c03 !important;
+        svg path {
+          fill: #f47c03;
+        }
+      }
+      &:active {
+        background-color: #fff !important;
+      }
+    }
+  }
+}
+
+//Contact Modal Popup
+.contact-modal,
+.contact {
+  .form-select,
+  .form-control {
+    margin-bottom: 1.875rem !important;
+    &::placeholder {
+      color: #00000050;
+    }
+  }
+}
+
+// Owl Carousel Buttons
+.owl-theme.align-dots-end .owl-dots {
+  text-align: end !important;
+}
+.dots-theme-2 {
+  .owl-dot {
+    border: none !important;
+    &.active span,
+    :hover {
+      background-color: #f47c03 !important;
+    }
+    span {
+      border: none !important;
+      border-radius: 2.5rem !important ;
+      height: 0.75rem !important;
+      width: 2rem !important;
+      background-color: #d9d9d9;
+    }
+  }
+}
+
+// Color Utilities
+.light {
+  background-color: #21409c !important;
+}
+.dark {
+  background-color: #10204e !important;
+}
+.bg-grey {
+  background-color: #f1f5f9 !important;
+}
+.text-blue {
+  color: #21409c !important;
+}
+
+//Background Image Call On All Pages
+.background-image {
+  min-height: 341px;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  a {
+    color: #fff;
+  }
+
+  .breadcrumb-item + .breadcrumb-item::before {
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 25px;
+    background: url('data:image/svg+xml,<svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0.305288 10.2131C0.117817 10.0255 0.0125018 9.77124 0.0125018 9.50607C0.0125018 9.24091 0.117817 8.9866 0.305288 8.79907L3.59829 5.50607L0.305288 2.21307C0.209778 2.12083 0.133596 2.01048 0.0811869 1.88848C0.0287779 1.76647 0.00119157 1.63525 3.77571e-05 1.50247C-0.00111606 1.36969 0.0241854 1.23802 0.0744663 1.11512C0.124747 0.992223 0.199 0.880571 0.292893 0.786678C0.386786 0.692785 0.498438 0.618532 0.621334 0.568252C0.744231 0.517971 0.87591 0.492668 1.00869 0.493822C1.14147 0.494976 1.27269 0.522562 1.39469 0.574971C1.5167 0.62738 1.62704 0.703563 1.71929 0.799073L5.71929 4.79907C5.90676 4.9866 6.01207 5.24091 6.01207 5.50607C6.01207 5.77124 5.90676 6.02555 5.71929 6.21307L1.71929 10.2131C1.53176 10.4005 1.27745 10.5059 1.01229 10.5059C0.747124 10.5059 0.492816 10.4005 0.305288 10.2131Z" fill="white"/></svg>')
+      no-repeat center;
+    background-size: contain;
+    margin-right: 12px;
+    margin-left: 8px;
+  }
+  .breadcrumb-item,
+  .breadcrumb-item.active {
+    color: #fff;
+  }
+
+  &.hero-section {
+    min-height: 26.1875rem;
+  }
+}
+
+// Call To Action Background
+.call-to-action {
+  background-image: linear-gradient(
+      269.83deg,
+      rgba(196, 196, 196, 0) 0.16%,
+      rgba(0, 0, 0, 0.8) 57.63%
+    ),
+    url("../../assets/images/calltoaction.png");
+}
+
+// Common Service Scrolls Cards Sticky Column
+#sticky {
+  height: 100%;
+  position: relative;
+  top: 0px;
+  margin-bottom: 1.5rem;
+}
+
+// Service-card
+.services-card {
+  img {
+    max-height: 300px;
+    object-fit: cover;
+  }
+  overflow: hidden;
+  border-radius: 0;
+  .card-img-overlay {
+    position: relative !important;
+  }
+  .details {
+    background-color: #000000;
+    padding: 24px;
+
+    p {
+     
+    }
+  }
+  img {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  &:hover img {
+    transform: scale(1.4);
+  }
+  .card-img {
+    border-radius: 0 !important;
+  }
+}
+
+// Other Utilities
+.background-bottom-right-align {
+  background-position: bottom right !important;
+}
+
+// Left & Right Image Image as Background Floaters
+.image-right .image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+
+.image-left .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+.fit-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Marquee container */
+.marquee {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  /* Marquee Content */
+  &-content {
+    min-width: 200%;
+    display: inline-flex;
+    animation: marquee 10s linear infinite;
+
+    /* Individual Text */
+    p {
+      display: inline-block;
+      margin: 0;
+      padding: 0 1.25rem;
+      font-weight: 800;
+      line-height: 160%;
+      font-size: 10rem;
+      color: rgba(0, 0, 0, 0.05);
+    }
+  }
+
+  /* Pause animation on hover */
+  &:hover &-content {
+    animation-play-state: paused;
+  }
+}
+
+/* Keyframes for Scrolling Effect */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+// Ul With Checks
+.check-list {
+  li {
+    position: relative;
+    padding-left: 40px;
+
+    &::before {
+      content: "";
+      height: 2rem;
+      width: 2rem;
+      background: url(../../assets/icons/checks.svg);
+      background-repeat: no-repeat;
+      display: inline-block;
+      position: absolute;
+      left: 0px;
+      top: -5px;
+    }
+  }
+}
+
+// Another Style For Cards
+.cards-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+
+  .card-body {
+    padding: 1rem 2rem !important;
+  }
+
+  h6 {
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+}
+
+// Brand Icon Card icon-logo
+.brand-cards {
+  height: 6.1875rem;
+
+  .card-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  img {
+    max-height: 3.1875rem;
+    max-width: 10.625rem;
+    object-fit: contain;
+  }
+}
+
+.link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 0rem;
+  font-weight: 500;
+  color: #fff !important;
+  text-decoration: none;
+
+  .icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    img {
+      height: 1.5rem;
+      width: 1.5rem;
+    }
+  }
+  &:hover {
+    .icon {
+      background-color: #fff;
+    }
+    img {
+      transform: rotate(45deg);
+      filter: brightness(0);
+    }
+  }
+  img {
+    transition: transform 0.3s ease;
+  }
+}
+
+.link-btn.dark-v {
+  color: #000 !important;
+
+  .icon {
+    border: 1px solid #000;
+    img {
+      filter: brightness(0);
+    }
+  }
+  &:hover {
+    img {
+      transform: rotate(45deg);
+    }
+  }
+  img {
+    transition: transform 0.3s ease;
+  }
+}
+
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+  .dropdown-menu li {
+    position: relative;
+  }
+  .nav-item .submenu {
+    display: none;
+    position: absolute;
+    left: 99.7%;
+    top: -8.9px;
+  }
+  .nav-item .submenu-left {
+    right: 100%;
+    left: auto;
+  }
+  .dropdown-menu > li:hover {
+  }
+  .dropdown-menu > li:hover > .submenu {
+    display: block;
+  }
+}
+/* Mobile View: Click-to-Toggle */
+@media all and (max-width: 991px) {
+  .nav-item .submenu {
+    display: none;
+    position: static;
+  }
+  .nav-item .submenu.show {
+    display: block;
+  }
+}
+
+/* 5 Cols and Rows Ensures equal width distribution */
+.col-5 {
+  flex: 0 0 20%; /* 20% width for 5 equal columns */
+  max-width: 20%;
+}
+@media (max-width: 992px) {
+  /* Medium devices (Tablets) */
+  .col-5 {
+    flex: 0 0 33.33%; /* 3 columns in one row */
+    max-width: 33.33%;
+  }
+}
+@media (max-width: 768px) {
+  /* Small devices (Mobile) */
+  .col-5 {
+    flex: 0 0 50%; /* 2 columns per row */
+    max-width: 50%;
+  }
+}
+@media (max-width: 576px) {
+  /* Extra Small devices (Phones) */
+  .col-5 {
+    flex: 0 0 100%; /* Full width */
+    max-width: 100%;
+  }
+}
+
+.scale-on-hover {
+  transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+.scale-on-hover:hover {
+  transform: scale(1.1); /* Scales up to 1.1x on hover */
+}
+
+/* Optional: Prevent overflow if needed */
+.scale {
+  overflow: hidden; /* Contains the scaled image within the column */
+}
