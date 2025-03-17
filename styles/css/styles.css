@@ -31,6 +31,7 @@ h5,
 
 .btn {
   display: inline-flex;
+  align-items: center;
   gap: 10px;
 }
 .btn img {
