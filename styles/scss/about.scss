@@ -40,6 +40,7 @@
 //Responsive For About Section
 @media (max-width: 768px) {
   .experience-section {
+    min-width: 90%;
     .header {
       border-right: none !important;
       border-bottom: 1px dashed #ffffff80;

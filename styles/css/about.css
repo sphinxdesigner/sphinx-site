@@ -33,6 +33,9 @@
 }
 
 @media (max-width: 768px) {
+  .experience-section {
+    min-width: 90%;
+  }
   .experience-section .header {
     border-right: none !important;
     border-bottom: 1px dashed rgba(255, 255, 255, 0.5019607843);
