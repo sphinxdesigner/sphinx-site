@@ -586,6 +586,9 @@ header {
   .nav-item .submenu.show {
     display: block;
   }
+  .navbar-nav .dropdown-menu {
+    box-shadow: none !important;
+  }
 }
 
 /* 5 Cols and Rows Ensures equal width distribution */
