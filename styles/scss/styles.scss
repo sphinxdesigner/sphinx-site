@@ -580,7 +580,7 @@ header {
 /* Mobile View: Click-to-Toggle */
 @media all and (max-width: 991px) {
   .nav-item .submenu {
-    display: none;
+    display: block;
     position: static;
   }
   .nav-item .submenu.show {
@@ -605,6 +605,10 @@ header {
   .col-5 {
     flex: 0 0 50%; /* 2 columns per row */
     max-width: 50%;
+  }
+
+  .timeline-title.display-4{
+    font-size: 1.25rem !important;
   }
 }
 @media (max-width: 576px) {
