@@ -71,6 +71,7 @@
 }
 
 .timeline .swiper-container {
+  height: 600px;
   width: 100%;
   position: relative;
 }
